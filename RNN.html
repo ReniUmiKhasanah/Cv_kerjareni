@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CV RENIUMI - Nama Anda</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef2f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 850px;
+    background-color: white;
+    margin: 2.5rem auto 2.5rem auto;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+
+  header {
+    text-align: center;
+    border-bottom: 3px solid #d802d8;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  header h1 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #6602d8;
+    letter-spacing: 1.2px;
+  }
+  header p {
+    margin: 0.3rem 0 0 0;
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #555;
+  }
+
+  section {
+    margin-bottom: 1.8rem;
+  }
+
+  section h2 {
+    font-weight: 600;
+    color: #d802b1;
+    border-left: 5px solid #d802bf;
+    padding-left: 0.6rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-size: 1.4rem;
+  }
+
+  .data-pribadi {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+  }
+
+  .foto {
+    flex-shrink: 0;
+    width: 140px;
+    height: 180px;
+    background-color: #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  .foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .data-pribadi-info {
+    flex-grow: 1;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444;
+  }
+
+  .data-pribadi-info p {
+    margin: 0.2rem 0;
+  }
+  
+  .pendidikan-item, .pengalaman-item {
+    margin-bottom: 1.2rem;
+  }
+
+  .pendidikan-item h3, .pengalaman-item h3 {
+    margin: 0 0 0.3rem 0;
+    font-weight: 600;
+    color: #222;
+  }
+
+  .pendidikan-item span, .pengalaman-item span {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #666;
+  }
+
+  .pendidikan-item p, .pengalaman-item p {
+    margin-top: 0.3rem;
+    font-size: 1rem;
+    color: #444;
+  }
+
+  .keahlian-list {
+    padding-left: 1.3rem;
+    list-style-type: disc;
+    color: #444;
+    font-size: 1rem;
+  }
+
+  .kontak-list {
+    font-size: 1rem;
+    color: #444;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .kontak-list li {
+    margin: 0.3rem 0;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 1.5rem 2rem;
+    }
+    .data-pribadi {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .foto {
+      width: 120px;
+      height: 160px;
+      margin-bottom: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CV</h1>
+      <p>Reni Umi Khasanah</p>
+    </header>
+
+    <section class="data-pribadi">
+      <div class="foto">
+        <!-- Ganti dengan URL foto asli jika ada -->
+        <img src="reni.jpg" alt="Foto Profil"/>
+      </div>
+      <div class="data-pribadi-info">
+        <p><strong>Nama</strong> : Reni Umi Khasanah</p>
+        <p><strong>Tempat, Tanggal Lahir</strong> : Bantul, 05 Maret 2008</p>
+        <p><strong>Alamat</strong> : JL. Laskar Jaya Kukap Poncosari Srandakan Bantul</p>
+        <p><strong>Telepon</strong> : 0895377348770</p>
+        <p><strong>Email</strong> : umireni02@gmail.com</p>
+        <p><strong>Status</strong> : Pelajar</p>
+        <p><strong>Agama</strong> : Islam</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pendidikan</h2>
+      <div class="pendidikan-item">
+        <h3>S1 Teknik Informatika - Universitas Indonesia</h3>
+        <span>2028 - 2032</span>
+        <p>Lulus dengan IPK 3.65, fokus pada pemrograman dan sistem informasi.</p>
+      </div>
+      <div class="pendidikan-item">
+        <h3>SMK Negeri 1 sanden</h3>
+        <span>2024 - 2027</span>
+        <p>Jurusan RPL. </p>
+
+        <h3>SMP Negeri 2 Srandakan</h3>
+        <span>2021 - 2024</span>
+
+        <h3>SD n Koripan</h3>
+        <span>2015 - 2021</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Pengalaman Kerja</h2>
+      <div class="pengalaman-item">
+        <h3>Software Developer - PT. Teknologi Bumi Nusantara</h3>
+        <span>Juli 2033 - Sekarang</span>
+        <p>Bertanggung jawab mengembangkan aplikasi web menggunakan JavaScript dan PHP. Berkontribusi dalam meningkatkan efisiensi aplikasi hingga 30%.</p>
+      </div>
+      <div class="pengalaman-item">
+        <h3>Junior Programmer - CV. Solusi IT</h3>
+        <span>Agustus 2032 - Juni 2033</span>
+        <p>Melakukan pemrograman modul backend dan database. Berpartisipasi dalam pengujian perangkat lunak dan debugging.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Keahlian</h2>
+      <ul class="keahlian-list">
+        <li>Bahasa Pemrograman: JavaScript, PHP, Python</li>
+        <li>Framework: React, Laravel</li>
+        <li>Database: MySQL, PostgreSQL</li>
+        <li>Manajemen Versi: Git</li>
+        <li>Bahasa Inggris: Aktif (Lisan & Tulisan)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Informasi Kontak</h2>
+      <ul class="kontak-list">
+        <li>Telepon:0895377348770</li>
+        <li>Email:umireni02@gmail.com</li>
+        <li>Alamat: Kukap Poncosari Srandakan Bantul, yogyakarta</li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2025 Nama Lengkap Anda. Semua hak cipta dilindungi.
+    </footer>
+  </div>
+</body>
+</html>
